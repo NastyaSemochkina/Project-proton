@@ -7509,810 +7509,748 @@ def callback_handler(callback):
     elif callback.data == 'Lesson5(':
         client.send_message(callback.message.chat.id, "Кто рассказывает!")
         markup_inline = types.InlineKeyboardMarkup()
-        button_2 = types.InlineKeyboardButton("1", callback_data='wrong_541')
-        button_3 = types.InlineKeyboardButton("2", callback_data='wrong_541')
-        button_4 = types.InlineKeyboardButton("3", callback_data='correct_541')
-        markup_inline.add(button_2, button_3, button_4)
-        client.send_photo(callback.message.chat.id, "https://postimg.cc/kBXVn93T", reply_markup=markup_inline)
-    elif callback.data == 'correct_541':
+        button_3 = types.InlineKeyboardButton("2", callback_data='wrong_741')
+        button_4 = types.InlineKeyboardButton("1", callback_data='correct_741')
+        markup_inline.add(button_3, button_4)
+        client.send_photo(callback.message.chat.id, "https://i.yapx.ru/YuOnd.jpg", reply_markup=markup_inline)
+    elif callback.data == 'correct_741':
         client.send_message(callback.message.chat.id, "Правильно! Молодец!")
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("3", callback_data='correct_542')
-        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_542')
-        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_542')
-        markup_inline.add(button_1, button_2, button_3)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/HVhLdytL', reply_markup=markup_inline)
-    elif callback.data == 'wrong_541':
+        button_1 = types.InlineKeyboardButton("2", callback_data='correct_742')
+        button_2 = types.InlineKeyboardButton("1", callback_data='wrong_742')
+        markup_inline.add(button_1, button_2)
+        client.send_photo(callback.message.chat.id, 'https://i.yapx.ru/YuOoH.jpg', reply_markup=markup_inline)
+    elif callback.data == 'wrong_741':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_542':
+    elif callback.data == 'correct_742':
         client.send_message(callback.message.chat.id, "Правильно! Молодец!")
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("3", callback_data='wrong_543')
-        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_543')
-        button_3 = types.InlineKeyboardButton("1", callback_data='correct_543')
-        markup_inline.add(button_1, button_2, button_3)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/BtZZFgY6', reply_markup=markup_inline)
-    elif callback.data == 'wrong_542':
+        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_743')
+        button_3 = types.InlineKeyboardButton("1", callback_data='correct_743')
+        markup_inline.add(button_2, button_3)
+        client.send_photo(callback.message.chat.id, 'https://i.yapx.ru/YuOof.jpg', reply_markup=markup_inline)
+    elif callback.data == 'wrong_742':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_543':
+    elif callback.data == 'correct_743':
         client.send_message(callback.message.chat.id, "Правильно! Молодец!")
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("2", callback_data='correct_544')
-        button_2 = types.InlineKeyboardButton("1", callback_data='wrong_544')
-        button_3 = types.InlineKeyboardButton("3", callback_data='wrong_544')
-        markup_inline.add(button_1, button_2, button_3)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/ZBbmrbLg', reply_markup=markup_inline)
-    elif callback.data == 'wrong_543':
+        button_1 = types.InlineKeyboardButton("2", callback_data='correct_744')
+        button_2 = types.InlineKeyboardButton("1", callback_data='wrong_744')
+        markup_inline.add(button_1, button_2)
+        client.send_photo(callback.message.chat.id, 'https://i.yapx.ru/YuOqU.jpg', reply_markup=markup_inline)
+    elif callback.data == 'wrong_743':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_544':
+    elif callback.data == 'correct_744':
         client.send_message(callback.message.chat.id, "Правильно! Молодец!")
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_2 = types.InlineKeyboardButton("3", callback_data='wrong_545')
-        button_3 = types.InlineKeyboardButton("2", callback_data='wrong_545')
-        button_4 = types.InlineKeyboardButton("1", callback_data='correct_545')
-        markup_inline.add(button_2, button_3, button_4)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/DS13HJjH', reply_markup=markup_inline)
-    elif callback.data == 'wrong_544':
+        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_745')
+        button_4 = types.InlineKeyboardButton("2", callback_data='correct_745')
+        markup_inline.add(button_3, button_4)
+        client.send_photo(callback.message.chat.id, 'https://i.yapx.ru/YuOqo.jpg', reply_markup=markup_inline)
+    elif callback.data == 'wrong_744':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_545':
+    elif callback.data == 'correct_745':
         client.send_message(callback.message.chat.id, "Правильно! Молодец!")
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_2 = types.InlineKeyboardButton("1", callback_data='wrong_546')
-        button_3 = types.InlineKeyboardButton("2", callback_data='wrong_546')
-        button_4 = types.InlineKeyboardButton("3", callback_data='correct_546')
-        markup_inline.add(button_2, button_3, button_4)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/k2QLfrDd', reply_markup=markup_inline)
-    elif callback.data == 'wrong_545':
+        button_3 = types.InlineKeyboardButton("2", callback_data='wrong_746')
+        button_4 = types.InlineKeyboardButton("1", callback_data='correct_746')
+        markup_inline.add(button_3, button_4)
+        client.send_photo(callback.message.chat.id, 'https://i.yapx.ru/YuOqy.jpg', reply_markup=markup_inline)
+    elif callback.data == 'wrong_745':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_546':
+    elif callback.data == 'correct_746':
         client.send_message(callback.message.chat.id, "Правильно! Молодец!")
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("2", callback_data='wrong_547')
-        button_2 = types.InlineKeyboardButton("3", callback_data='correct_547')
-        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_547')
-        markup_inline.add(button_1, button_2, button_3)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/9zsS2X7h', reply_markup=markup_inline)
-    elif callback.data == 'wrong_546':
+        button_2 = types.InlineKeyboardButton("2", callback_data='correct_747')
+        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_747')
+        markup_inline.add(button_2, button_3)
+        client.send_photo(callback.message.chat.id, 'https://i.yapx.ru/YuOq4.jpg', reply_markup=markup_inline)
+    elif callback.data == 'wrong_746':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_547':
+    elif callback.data == 'correct_747':
         client.send_message(callback.message.chat.id, "Правильно! Молодец!")
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("2", callback_data='correct_548')
-        button_2 = types.InlineKeyboardButton("3", callback_data='wrong_548')
-        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_548')
-        markup_inline.add(button_1, button_2, button_3)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/Wd5w2SHk', reply_markup=markup_inline)
-    elif callback.data == 'wrong_547':
+        button_1 = types.InlineKeyboardButton("2", callback_data='correct_748')
+        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_748')
+        markup_inline.add(button_1, button_3)
+        client.send_photo(callback.message.chat.id, 'https://i.yapx.ru/YuOrD.jpg', reply_markup=markup_inline)
+    elif callback.data == 'wrong_747':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_548':
+    elif callback.data == 'correct_748':
         client.send_message(callback.message.chat.id, "Правильно! Молодец!")
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("1", callback_data='correct_549')
-        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_549')
-        button_3 = types.InlineKeyboardButton("3", callback_data='wrong_549')
-        markup_inline.add(button_1, button_2, button_3)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/v1j7nTM8', reply_markup=markup_inline)
-    elif callback.data == 'wrong_548':
+        button_1 = types.InlineKeyboardButton("1", callback_data='correct_749')
+        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_749')
+        markup_inline.add(button_1, button_2)
+        client.send_photo(callback.message.chat.id, 'https://i.yapx.ru/YuOrX.jpg', reply_markup=markup_inline)
+    elif callback.data == 'wrong_748':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_549':
+    elif callback.data == 'correct_749':
         client.send_message(callback.message.chat.id, "Правильно! Молодец!")
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("3", callback_data='wrong_550')
-        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_550')
-        button_3 = types.InlineKeyboardButton("1", callback_data='correct_550')
-        markup_inline.add(button_1, button_2, button_3)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/xNGLBPmq', reply_markup=markup_inline)
-    elif callback.data == 'wrong_549':
+        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_750')
+        button_3 = types.InlineKeyboardButton("1", callback_data='correct_750')
+        markup_inline.add(button_2, button_3)
+        client.send_photo(callback.message.chat.id, 'https://i.yapx.ru/YuOre.jpg', reply_markup=markup_inline)
+    elif callback.data == 'wrong_749':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_550':
+    elif callback.data == 'correct_750':
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("Перейти в начало", callback_data='lala4')
+        button_1 = types.InlineKeyboardButton("Перейти в начало", callback_data='lala3')
         markup_inline.add(button_1)
         client.send_message(callback.message.chat.id,
                             "Молодец!Переходи в следующий урок!",
                             reply_markup=markup_inline)
-    elif callback.data == 'wrong_550':
+    elif callback.data == 'wrong_750':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
 
-    elif callback.data == 'Prostr1':
+    elif callback.data == 'Prostr2':
         markup_inline = types.InlineKeyboardMarkup()
-        item_1 = types.InlineKeyboardButton('Урок 1', callback_data='Lesson1;')
-        item_2 = types.InlineKeyboardButton('Урок 2', callback_data='Lesson2;')
-        item_3 = types.InlineKeyboardButton('Урок 3', callback_data='Lesson3;')
-        item_4 = types.InlineKeyboardButton('Урок 4', callback_data='Lesson4;')
-        item_5 = types.InlineKeyboardButton('Урок 5', callback_data='Lesson5;')
+        item_1 = types.InlineKeyboardButton('Урок 1', callback_data='Lesson1!')
+        item_2 = types.InlineKeyboardButton('Урок 2', callback_data='Lesson2!')
+        item_3 = types.InlineKeyboardButton('Урок 3', callback_data='Lesson3!')
+        item_4 = types.InlineKeyboardButton('Урок 4', callback_data='Lesson4!')
+        item_5 = types.InlineKeyboardButton('Урок 5', callback_data='Lesson5!')
         markup_inline.add(item_1, item_2, item_3, item_4, item_5)
         client.send_message(callback.message.chat.id, 'Выбирай урок', reply_markup=markup_inline)
 
-    elif callback.data == 'Lesson1;':
-        client.send_message(callback.message.chat.id, "Вид сверху:)")
+    elif callback.data == 'Lesson1!':
+        client.send_message(callback.message.chat.id, "Карты!")
         markup_inline = types.InlineKeyboardMarkup()
-        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_551')
-        button_3 = types.InlineKeyboardButton("1", callback_data='correct_551')
+        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_751')
+        button_3 = types.InlineKeyboardButton("1", callback_data='correct_751')
         markup_inline.add(button_2, button_3)
-        client.send_photo(callback.message.chat.id, "https://postimg.cc/ZBCYyYHc", reply_markup=markup_inline)
-    elif callback.data == 'correct_551':
+        client.send_photo(callback.message.chat.id, "https://postimg.cc/jLZT6q7y", reply_markup=markup_inline)
+    elif callback.data == 'correct_751':
         client.send_message(callback.message.chat.id, "Правильно! Молодец!")
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("1", callback_data='correct_552')
-        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_552')
+        button_1 = types.InlineKeyboardButton("1", callback_data='correct_752')
+        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_752')
         markup_inline.add(button_1, button_2)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/6T45W3y6', reply_markup=markup_inline)
-    elif callback.data == 'wrong_551':
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/SXzppWtG', reply_markup=markup_inline)
+    elif callback.data == 'wrong_751':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_552':
+    elif callback.data == 'correct_752':
         client.send_message(callback.message.chat.id, "Правильно! Молодец!")
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("3", callback_data='wrong_553')
-        button_2 = types.InlineKeyboardButton("4", callback_data='correct_553')
-        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_553')
-        button_4 = types.InlineKeyboardButton("2", callback_data='wrong_553')
-        markup_inline.add(button_1, button_2, button_3, button_4)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/TKfRJJQh', reply_markup=markup_inline)
-    elif callback.data == 'wrong_552':
+        button_1 = types.InlineKeyboardButton("2", callback_data='wrong_753')
+        button_2 = types.InlineKeyboardButton("1", callback_data='correct_753')
+        markup_inline.add(button_1, button_2)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/DJk3f893', reply_markup=markup_inline)
+    elif callback.data == 'wrong_752':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_553':
+    elif callback.data == 'correct_753':
         client.send_message(callback.message.chat.id, "Правильно! Молодец!")
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("1", callback_data='wrong_554')
-        button_2 = types.InlineKeyboardButton("4", callback_data='wrong_554')
-        button_3 = types.InlineKeyboardButton("2", callback_data='correct_554')
-        button_4 = types.InlineKeyboardButton("3", callback_data='wrong_554')
+        button_1 = types.InlineKeyboardButton("13", callback_data='wrong_754')
+        button_2 = types.InlineKeyboardButton("24", callback_data='wrong_754')
+        button_3 = types.InlineKeyboardButton("14", callback_data='correct_754')
+        button_4 = types.InlineKeyboardButton("32", callback_data='wrong_754')
         markup_inline.add(button_1, button_2, button_3, button_4)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/21GCcLXG', reply_markup=markup_inline)
-    elif callback.data == 'wrong_553':
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/gwPPmwFF', reply_markup=markup_inline)
+    elif callback.data == 'wrong_753':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_554':
+    elif callback.data == 'correct_754':
         client.send_message(callback.message.chat.id, "Правильно! Молодец!")
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("3", callback_data='wrong_555')
-        button_2 = types.InlineKeyboardButton("4", callback_data='correct_555')
-        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_555')
-        button_4 = types.InlineKeyboardButton("2", callback_data='wrong_555')
-        markup_inline.add(button_1, button_2, button_3, button_4)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/vcdMGtJX', reply_markup=markup_inline)
-    elif callback.data == 'wrong_554':
+        button_1 = types.InlineKeyboardButton("1", callback_data='wrong_755')
+        button_2 = types.InlineKeyboardButton("2", callback_data='correct_755')
+        markup_inline.add(button_1, button_2)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/30Nsnmpp', reply_markup=markup_inline)
+    elif callback.data == 'wrong_754':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_555':
+    elif callback.data == 'correct_755':
         client.send_message(callback.message.chat.id, "Правильно! Молодец!")
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("1", callback_data='correct_556')
-        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_556')
-        button_3 = types.InlineKeyboardButton("3", callback_data='wrong_556')
-        button_4 = types.InlineKeyboardButton("4", callback_data='wrong_556')
-        markup_inline.add(button_1, button_2, button_3, button_4)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/v1Dw0qn8', reply_markup=markup_inline)
-    elif callback.data == 'wrong_555':
+        button_1 = types.InlineKeyboardButton("2", callback_data='correct_756')
+        button_2 = types.InlineKeyboardButton("1", callback_data='wrong_756')
+        markup_inline.add(button_1, button_2)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/svtk4B2Q', reply_markup=markup_inline)
+    elif callback.data == 'wrong_755':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_556':
+    elif callback.data == 'correct_756':
         client.send_message(callback.message.chat.id, "Правильно! Молодец!")
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("4", callback_data='wrong_557')
-        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_557')
-        button_3 = types.InlineKeyboardButton("3", callback_data='correct_557')
-        button_4 = types.InlineKeyboardButton("1", callback_data='wrong_557')
-        markup_inline.add(button_1, button_2, button_3, button_4)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/jnYVdRFC', reply_markup=markup_inline)
-    elif callback.data == 'wrong_556':
+        button_2 = types.InlineKeyboardButton("3", callback_data='wrong_757')
+        button_3 = types.InlineKeyboardButton("2", callback_data='correct_757')
+        button_4 = types.InlineKeyboardButton("1", callback_data='wrong_757')
+        markup_inline.add(button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/CZ099Wkw', reply_markup=markup_inline)
+    elif callback.data == 'wrong_756':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_557':
+    elif callback.data == 'correct_757':
         client.send_message(callback.message.chat.id, "Правильно! Молодец!")
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("1", callback_data='correct_558')
-        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_558')
-        button_3 = types.InlineKeyboardButton("3", callback_data='wrong_558')
-        button_4 = types.InlineKeyboardButton("4", callback_data='wrong_558')
+        button_1 = types.InlineKeyboardButton("4", callback_data='correct_758')
+        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_758')
+        button_3 = types.InlineKeyboardButton("3", callback_data='wrong_758')
+        button_4 = types.InlineKeyboardButton("1", callback_data='wrong_758')
         markup_inline.add(button_1, button_2, button_3, button_4)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/rz5XZtD4', reply_markup=markup_inline)
-    elif callback.data == 'wrong_557':
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/B8CR3MBH', reply_markup=markup_inline)
+    elif callback.data == 'wrong_757':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_558':
-        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+    elif callback.data == 'correct_758':
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("4", callback_data='wrong_559')
-        button_2 = types.InlineKeyboardButton("2", callback_data='correct_559')
-        button_3 = types.InlineKeyboardButton("3", callback_data='wrong_559')
-        button_4 = types.InlineKeyboardButton("1", callback_data='wrong_559')
-        markup_inline.add(button_1, button_2, button_3, button_4)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/2VwprRF8', reply_markup=markup_inline)
-    elif callback.data == 'wrong_558':
-        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_559':
-        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
-        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
-        connect.commit()
-        markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("3", callback_data='wrong_560')
-        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_560')
-        button_3 = types.InlineKeyboardButton("1", callback_data='correct_560')
-        button_4 = types.InlineKeyboardButton("4", callback_data='wrong_560')
-        markup_inline.add(button_1, button_2, button_3, button_4)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/qNb96s5P', reply_markup=markup_inline)
-    elif callback.data == 'wrong_559':
-        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_560':
-        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
-        connect.commit()
-        markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("Перейти в начало", callback_data='Prostr1')
+        button_1 = types.InlineKeyboardButton("Перейти в начало", callback_data='Prostr2')
         markup_inline.add(button_1)
         client.send_message(callback.message.chat.id,
                             "Молодец!Переходи в следующий урок!",
                             reply_markup=markup_inline)
-    elif callback.data == 'wrong_560':
+    elif callback.data == 'wrong_758':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
 
 
 
-    elif callback.data == 'Lesson2;':
-        client.send_message(callback.message.chat.id, "Из двух одна!")
+    elif callback.data == 'Lesson2!':
+        client.send_message(callback.message.chat.id, "На две части)")
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("3", callback_data='wrong_561')
-        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_561')
-        button_3 = types.InlineKeyboardButton("1", callback_data='correct_561')
+        button_1 = types.InlineKeyboardButton("12", callback_data='wrong_761')
+        button_2 = types.InlineKeyboardButton("23", callback_data='wrong_761')
+        button_3 = types.InlineKeyboardButton("31", callback_data='correct_761')
         markup_inline.add(button_1, button_2, button_3)
-        client.send_photo(callback.message.chat.id, "https://postimg.cc/G80gvqJ5", reply_markup=markup_inline)
-    elif callback.data == 'correct_561':
+        client.send_photo(callback.message.chat.id, "https://postimg.cc/bZpTP8CV", reply_markup=markup_inline)
+    elif callback.data == 'correct_761':
         client.send_message(callback.message.chat.id, "Правильно! Молодец!")
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("1", callback_data='correct_562')
-        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_562')
-        button_3 = types.InlineKeyboardButton("3", callback_data='wrong_562')
+        button_1 = types.InlineKeyboardButton("12", callback_data='correct_762')
+        button_2 = types.InlineKeyboardButton("23", callback_data='wrong_762')
+        button_3 = types.InlineKeyboardButton("13", callback_data='wrong_762')
         markup_inline.add(button_1, button_2, button_3)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/Yj7MH3KR', reply_markup=markup_inline)
-    elif callback.data == 'wrong_561':
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/dkb2xKZB', reply_markup=markup_inline)
+    elif callback.data == 'wrong_761':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_562':
+    elif callback.data == 'correct_762':
         client.send_message(callback.message.chat.id, "Правильно! Молодец!")
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("3", callback_data='wrong_563')
-        button_2 = types.InlineKeyboardButton("1", callback_data='wrong_563')
-        button_3 = types.InlineKeyboardButton("2", callback_data='correct_563')
+        button_1 = types.InlineKeyboardButton("13", callback_data='wrong_763')
+        button_2 = types.InlineKeyboardButton("12", callback_data='wrong_763')
+        button_3 = types.InlineKeyboardButton("23", callback_data='correct_763')
         markup_inline.add(button_1, button_2, button_3)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/cr4WKLJ8', reply_markup=markup_inline)
-    elif callback.data == 'wrong_562':
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/BP2TWwxG', reply_markup=markup_inline)
+    elif callback.data == 'wrong_762':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_563':
+    elif callback.data == 'correct_763':
         client.send_message(callback.message.chat.id, "Правильно! Молодец!")
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_564')
-        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_564')
-        button_4 = types.InlineKeyboardButton("3", callback_data='correct_564')
+        button_2 = types.InlineKeyboardButton("23", callback_data='wrong_764')
+        button_3 = types.InlineKeyboardButton("13", callback_data='wrong_764')
+        button_4 = types.InlineKeyboardButton("12", callback_data='correct_764')
         markup_inline.add(button_2, button_3, button_4)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/v4CwS7tW', reply_markup=markup_inline)
-    elif callback.data == 'wrong_563':
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/cKjwvNhS', reply_markup=markup_inline)
+    elif callback.data == 'wrong_763':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_564':
+    elif callback.data == 'correct_764':
         client.send_message(callback.message.chat.id, "Правильно! Молодец!")
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("1", callback_data='wrong_565')
-        button_2 = types.InlineKeyboardButton("2", callback_data='correct_565')
-        button_3 = types.InlineKeyboardButton("3", callback_data='wrong_565')
+        button_1 = types.InlineKeyboardButton("13", callback_data='wrong_765')
+        button_2 = types.InlineKeyboardButton("12", callback_data='correct_765')
+        button_3 = types.InlineKeyboardButton("32", callback_data='wrong_765')
         markup_inline.add(button_1, button_2, button_3)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/PpQGxgs4', reply_markup=markup_inline)
-    elif callback.data == 'wrong_564':
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/SnxMVKt4', reply_markup=markup_inline)
+    elif callback.data == 'wrong_764':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_565':
+    elif callback.data == 'correct_765':
         client.send_message(callback.message.chat.id, "Правильно! Молодец!")
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_2 = types.InlineKeyboardButton("3", callback_data='wrong_566')
-        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_566')
-        button_4 = types.InlineKeyboardButton("2", callback_data='correct_566')
+        button_2 = types.InlineKeyboardButton("31", callback_data='wrong_766')
+        button_3 = types.InlineKeyboardButton("12", callback_data='wrong_766')
+        button_4 = types.InlineKeyboardButton("23", callback_data='correct_766')
         markup_inline.add(button_2, button_3, button_4)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/BX6WS7hT', reply_markup=markup_inline)
-    elif callback.data == 'wrong_565':
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/Mccj2FSr', reply_markup=markup_inline)
+    elif callback.data == 'wrong_765':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_566':
+    elif callback.data == 'correct_766':
         client.send_message(callback.message.chat.id, "Правильно! Молодец!")
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("1", callback_data='correct_567')
-        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_567')
-        button_3 = types.InlineKeyboardButton("3", callback_data='wrong_567')
+        button_1 = types.InlineKeyboardButton("13", callback_data='correct_767')
+        button_2 = types.InlineKeyboardButton("12", callback_data='wrong_767')
+        button_3 = types.InlineKeyboardButton("23", callback_data='wrong_767')
         markup_inline.add(button_1, button_2, button_3)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/18nL6n14', reply_markup=markup_inline)
-    elif callback.data == 'wrong_566':
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/Y4JLpz22', reply_markup=markup_inline)
+    elif callback.data == 'wrong_766':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_567':
+    elif callback.data == 'correct_767':
         client.send_message(callback.message.chat.id, "Правильно! Молодец!")
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("2", callback_data='wrong_568')
-        button_2 = types.InlineKeyboardButton("1", callback_data='wrong_568')
-        button_3 = types.InlineKeyboardButton("3", callback_data='correct_568')
+        button_1 = types.InlineKeyboardButton("23", callback_data='wrong_768')
+        button_2 = types.InlineKeyboardButton("12", callback_data='wrong_768')
+        button_3 = types.InlineKeyboardButton("13", callback_data='correct_768')
         markup_inline.add(button_1, button_2, button_3)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/JGtgVDnK', reply_markup=markup_inline)
-    elif callback.data == 'wrong_567':
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/wRztNxsS', reply_markup=markup_inline)
+    elif callback.data == 'wrong_767':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_568':
+    elif callback.data == 'correct_768':
         client.send_message(callback.message.chat.id, "Правильно! Молодец!")
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("2", callback_data='correct_569')
-        button_2 = types.InlineKeyboardButton("3", callback_data='wrong_569')
-        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_569')
+        button_1 = types.InlineKeyboardButton("13", callback_data='correct_769')
+        button_2 = types.InlineKeyboardButton("23", callback_data='wrong_769')
+        button_3 = types.InlineKeyboardButton("12", callback_data='wrong_769')
         markup_inline.add(button_1, button_2, button_3)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/62YHFtxD', reply_markup=markup_inline)
-    elif callback.data == 'wrong_568':
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/rR9DN61z', reply_markup=markup_inline)
+    elif callback.data == 'wrong_768':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_569':
+    elif callback.data == 'correct_769':
         client.send_message(callback.message.chat.id, "Правильно! Молодец!")
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_2 = types.InlineKeyboardButton("3", callback_data='wrong_570')
-        button_3 = types.InlineKeyboardButton("2", callback_data='wrong_570')
-        button_4 = types.InlineKeyboardButton("1", callback_data='correct_570')
+        button_2 = types.InlineKeyboardButton("13", callback_data='wrong_770')
+        button_3 = types.InlineKeyboardButton("12", callback_data='wrong_770')
+        button_4 = types.InlineKeyboardButton("23", callback_data='correct_770')
         markup_inline.add(button_2, button_3, button_4)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/7C4m6fxF', reply_markup=markup_inline)
-    elif callback.data == 'wrong_569':
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/TpRLYwxb', reply_markup=markup_inline)
+    elif callback.data == 'wrong_769':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_570':
+    elif callback.data == 'correct_770':
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("Перейти в начало", callback_data='Prostr1')
+        button_1 = types.InlineKeyboardButton("Перейти в начало", callback_data='Prostr2')
         markup_inline.add(button_1)
         client.send_message(callback.message.chat.id,
                             "Молодец!Переходи в следующий урок!",
                             reply_markup=markup_inline)
-    elif callback.data == 'wrong_570':
+    elif callback.data == 'wrong_770':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
 
 
 
 
-    elif callback.data == 'Lesson3;':
-        client.send_message(callback.message.chat.id, "Симметрия!")
+    elif callback.data == 'Lesson3!':
+        client.send_message(callback.message.chat.id, "Кубики.Вид!")
         markup_inline = types.InlineKeyboardMarkup()
-        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_571')
-        button_4 = types.InlineKeyboardButton("2", callback_data='correct_571')
-        button_2 = types.InlineKeyboardButton("3", callback_data='wrong_571')
-        markup_inline.add(button_3, button_4, button_2)
-        client.send_photo(callback.message.chat.id, "https://postimg.cc/fV6mTLNx", reply_markup=markup_inline)
-    elif callback.data == 'correct_571':
+        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_771')
+        button_4 = types.InlineKeyboardButton("2", callback_data='correct_771')
+        markup_inline.add(button_3, button_4)
+        client.send_photo(callback.message.chat.id, "https://postimg.cc/wyqZjZqg", reply_markup=markup_inline)
+    elif callback.data == 'correct_771':
         client.send_message(callback.message.chat.id, "Правильно! Молодец!")
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("3", callback_data='correct_572')
-        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_572')
-        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_572')
-        button_4 = types.InlineKeyboardButton("4", callback_data='wrong_572')
-        markup_inline.add(button_1, button_2, button_3, button_4)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/k2rg2t2X', reply_markup=markup_inline)
-    elif callback.data == 'wrong_571':
-        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_572':
-        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
-        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
-        connect.commit()
-        markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("1", callback_data='wrong_573')
-        button_2 = types.InlineKeyboardButton("3", callback_data='wrong_573')
-        button_3 = types.InlineKeyboardButton("2", callback_data='correct_573')
+        button_1 = types.InlineKeyboardButton("2", callback_data='correct_772')
+        button_2 = types.InlineKeyboardButton("1", callback_data='wrong_772')
+        button_3 = types.InlineKeyboardButton("3", callback_data='wrong_772')
         markup_inline.add(button_1, button_2, button_3)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/WhZJYVrz', reply_markup=markup_inline)
-    elif callback.data == 'wrong_572':
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/62bj5Qbf', reply_markup=markup_inline)
+    elif callback.data == 'wrong_771':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_573':
+    elif callback.data == 'correct_772':
         client.send_message(callback.message.chat.id, "Правильно! Молодец!")
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("3", callback_data='correct_574')
-        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_574')
-        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_574')
+        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_773')
+        button_3 = types.InlineKeyboardButton("1", callback_data='correct_773')
+        markup_inline.add(button_2, button_3)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/ZWzfq2H2', reply_markup=markup_inline)
+    elif callback.data == 'wrong_772':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_773':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("2", callback_data='correct_774')
+        button_2 = types.InlineKeyboardButton("1", callback_data='wrong_774')
+        markup_inline.add(button_1, button_2)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/kDVwvqhL', reply_markup=markup_inline)
+    elif callback.data == 'wrong_773':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_774':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_4 = types.InlineKeyboardButton("2", callback_data='correct_775')
+        button_1 = types.InlineKeyboardButton("1", callback_data='wrong_775')
+        markup_inline.add(button_4, button_1)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/RNKR2GmR', reply_markup=markup_inline)
+    elif callback.data == 'wrong_774':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_775':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_4 = types.InlineKeyboardButton("2", callback_data='correct_776')
+        button_1 = types.InlineKeyboardButton("1", callback_data='wrong_776')
+        markup_inline.add(button_4, button_1)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/v4vvZBcx', reply_markup=markup_inline)
+    elif callback.data == 'wrong_775':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_776':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("1", callback_data='wrong_777')
+        button_2 = types.InlineKeyboardButton("2", callback_data='correct_777')
+        markup_inline.add(button_1, button_2)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/qgCXCQNT', reply_markup=markup_inline)
+    elif callback.data == 'wrong_776':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_777':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("2", callback_data='correct_778')
+        button_2 = types.InlineKeyboardButton("1", callback_data='wrong_778')
+        button_3 = types.InlineKeyboardButton("3", callback_data='wrong_778')
         markup_inline.add(button_1, button_2, button_3)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/hhBj4m7D', reply_markup=markup_inline)
-    elif callback.data == 'wrong_573':
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/N5q88TXr', reply_markup=markup_inline)
+    elif callback.data == 'wrong_777':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_574':
+    elif callback.data == 'correct_778':
         client.send_message(callback.message.chat.id, "Правильно! Молодец!")
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_2 = types.InlineKeyboardButton("3", callback_data='wrong_575')
-        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_575')
-        button_4 = types.InlineKeyboardButton("4", callback_data='correct_575')
-        button_1 = types.InlineKeyboardButton("2", callback_data='wrong_575')
-        markup_inline.add(button_2, button_3, button_4, button_1)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/qzBvydLW', reply_markup=markup_inline)
-    elif callback.data == 'wrong_574':
+        button_1 = types.InlineKeyboardButton("2", callback_data='correct_779')
+        button_2 = types.InlineKeyboardButton("1", callback_data='wrong_779')
+        markup_inline.add(button_1, button_2)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/1gtDRrkb', reply_markup=markup_inline)
+    elif callback.data == 'wrong_778':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_575':
+    elif callback.data == 'correct_779':
         client.send_message(callback.message.chat.id, "Правильно! Молодец!")
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_2 = types.InlineKeyboardButton("1", callback_data='wrong_576')
-        button_3 = types.InlineKeyboardButton("2", callback_data='wrong_576')
-        button_4 = types.InlineKeyboardButton("4", callback_data='correct_576')
-        button_1 = types.InlineKeyboardButton("3", callback_data='wrong_576')
-        markup_inline.add(button_2, button_3, button_4, button_1)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/5X69KqD3', reply_markup=markup_inline)
-    elif callback.data == 'wrong_575':
-        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_576':
-        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
-        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
-        connect.commit()
-        markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("1", callback_data='wrong_577')
-        button_2 = types.InlineKeyboardButton("3", callback_data='correct_577')
-        button_3 = types.InlineKeyboardButton("2", callback_data='wrong_577')
+        button_1 = types.InlineKeyboardButton("2", callback_data='wrong_780')
+        button_2 = types.InlineKeyboardButton("1", callback_data='wrong_780')
+        button_3 = types.InlineKeyboardButton("3", callback_data='correct_780')
         markup_inline.add(button_1, button_2, button_3)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/QBJzpvSn', reply_markup=markup_inline)
-    elif callback.data == 'wrong_576':
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/vxWV2qnx', reply_markup=markup_inline)
+    elif callback.data == 'wrong_779':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_577':
-        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+    elif callback.data == 'correct_780':
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("3", callback_data='correct_578')
-        button_2 = types.InlineKeyboardButton("1", callback_data='wrong_578')
-        button_3 = types.InlineKeyboardButton("2", callback_data='wrong_578')
-        markup_inline.add(button_1, button_2, button_3)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/06PW2cxG', reply_markup=markup_inline)
-    elif callback.data == 'wrong_577':
-        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_578':
-        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
-        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
-        connect.commit()
-        markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("3", callback_data='correct_579')
-        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_579')
-        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_579')
-        markup_inline.add(button_1, button_2, button_3)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/dkXjdBMx', reply_markup=markup_inline)
-    elif callback.data == 'wrong_578':
-        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_579':
-        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
-        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
-        connect.commit()
-        markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("2", callback_data='wrong_580')
-        button_2 = types.InlineKeyboardButton("1", callback_data='wrong_580')
-        button_3 = types.InlineKeyboardButton("3", callback_data='correct_580')
-        markup_inline.add(button_1, button_2, button_3)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/5X7Y6tWP', reply_markup=markup_inline)
-    elif callback.data == 'wrong_579':
-        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_580':
-        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
-        connect.commit()
-        markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("Перейти в начало", callback_data='Prostr1')
+        button_1 = types.InlineKeyboardButton("Перейти в начало", callback_data='Prostr2')
         markup_inline.add(button_1)
         client.send_message(callback.message.chat.id,
                             "Молодец!Переходи в следующий урок!",
                             reply_markup=markup_inline)
-    elif callback.data == 'wrong_580':
+    elif callback.data == 'wrong_780':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
 
 
 
-    elif callback.data == 'Lesson4;':
-        client.send_message(callback.message.chat.id, "Cчитаем фигуры!")
+    elif callback.data == 'Lesson4!':
+        client.send_message(callback.message.chat.id, "Считаем кубики !")
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("4", callback_data='wrong_581')
-        button_2 = types.InlineKeyboardButton("7", callback_data='wrong_581')
-        button_3 = types.InlineKeyboardButton("5", callback_data='wrong_581')
-        button_4 = types.InlineKeyboardButton("6", callback_data='correct_581')
+        button_1 = types.InlineKeyboardButton("9", callback_data='wrong_781')
+        button_2 = types.InlineKeyboardButton("11", callback_data='wrong_781')
+        button_3 = types.InlineKeyboardButton("8", callback_data='wrong_781')
+        button_4 = types.InlineKeyboardButton("10", callback_data='correct_781')
         markup_inline.add(button_1, button_2, button_3, button_4)
-        client.send_photo(callback.message.chat.id, "https://postimg.cc/5XXYQFqX", reply_markup=markup_inline)
-    elif callback.data == 'correct_581':
+        client.send_photo(callback.message.chat.id, "https://postimg.cc/476b7x39", reply_markup=markup_inline)
+    elif callback.data == 'correct_781':
         client.send_message(callback.message.chat.id, "Правильно! Молодец!")
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("3", callback_data='correct_582')
-        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_582')
-        button_3 = types.InlineKeyboardButton("5", callback_data='wrong_582')
-        button_4 = types.InlineKeyboardButton("4", callback_data='wrong_582')
+        button_1 = types.InlineKeyboardButton("9", callback_data='correct_782')
+        button_2 = types.InlineKeyboardButton("12", callback_data='wrong_782')
+        button_3 = types.InlineKeyboardButton("10", callback_data='wrong_782')
+        button_4 = types.InlineKeyboardButton("8", callback_data='wrong_782')
         markup_inline.add(button_1, button_2, button_3, button_4)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/7bq5MRn8', reply_markup=markup_inline)
-    elif callback.data == 'wrong_581':
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/QB5cwd1y', reply_markup=markup_inline)
+    elif callback.data == 'wrong_781':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_582':
+    elif callback.data == 'correct_782':
         client.send_message(callback.message.chat.id, "Правильно! Молодец!")
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("4", callback_data='wrong_583')
-        button_2 = types.InlineKeyboardButton("3", callback_data='wrong_583')
-        button_3 = types.InlineKeyboardButton("6", callback_data='correct_583')
-        button_4 = types.InlineKeyboardButton("8", callback_data='wrong_583')
-        markup_inline.add(button_1, button_2, button_3, button_4)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/cvtCLG0Y', reply_markup=markup_inline)
-    elif callback.data == 'wrong_582':
-        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_583':
-        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
-        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
-        connect.commit()
-        markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("2", callback_data='correct_584')
-        button_2 = types.InlineKeyboardButton("7", callback_data='wrong_584')
-        button_3 = types.InlineKeyboardButton("3", callback_data='wrong_584')
-        button_4 = types.InlineKeyboardButton("1", callback_data='wrong_584')
-        markup_inline.add(button_1, button_2, button_3, button_4)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/xJn15kHy', reply_markup=markup_inline)
-    elif callback.data == 'wrong_583':
-        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_584':
-        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
-        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
-        connect.commit()
-        markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("10", callback_data='wrong_585')
-        button_2 = types.InlineKeyboardButton("6", callback_data='wrong_585')
-        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_585')
-        button_4 = types.InlineKeyboardButton("3", callback_data='correct_585')
-        markup_inline.add(button_1, button_2, button_3, button_4)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/ctKyBZDB', reply_markup=markup_inline)
-    elif callback.data == 'wrong_584':
-        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_585':
-        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
-        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
-        connect.commit()
-        markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("5", callback_data='wrong_586')
-        button_2 = types.InlineKeyboardButton("8", callback_data='wrong_586')
-        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_586')
-        button_4 = types.InlineKeyboardButton("3", callback_data='correct_586')
-        markup_inline.add(button_1, button_2, button_3, button_4)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/N5Hvys2g', reply_markup=markup_inline)
-    elif callback.data == 'wrong_585':
-        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_586':
-        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
-        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
-        connect.commit()
-        markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("4", callback_data='wrong_587')
-        button_2 = types.InlineKeyboardButton("9", callback_data='correct_587')
-        button_3 = types.InlineKeyboardButton("7", callback_data='wrong_587')
-        button_4 = types.InlineKeyboardButton("12", callback_data='wrong_587')
-        markup_inline.add(button_1, button_2, button_3, button_4)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/47SjdqJ7', reply_markup=markup_inline)
-    elif callback.data == 'wrong_586':
-        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_587':
-        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
-        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
-        connect.commit()
-        markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("3", callback_data='correct_588')
-        button_2 = types.InlineKeyboardButton("6", callback_data='wrong_588')
-        button_3 = types.InlineKeyboardButton("2", callback_data='wrong_588')
-        button_4 = types.InlineKeyboardButton("5", callback_data='wrong_588')
-        markup_inline.add(button_1, button_2, button_3, button_4)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/ppN16DyH', reply_markup=markup_inline)
-    elif callback.data == 'wrong_587':
-        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_588':
-        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
-        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
-        connect.commit()
-        markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("8", callback_data='correct_589')
-        button_2 = types.InlineKeyboardButton("9", callback_data='wrong_589')
-        button_3 = types.InlineKeyboardButton("4", callback_data='wrong_589')
-        button_4 = types.InlineKeyboardButton("11", callback_data='wrong_589')
-        markup_inline.add(button_1, button_2, button_3, button_4)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/tZKD8jq5', reply_markup=markup_inline)
-    elif callback.data == 'wrong_588':
-        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_589':
-        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
-        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
-        connect.commit()
-        markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("6", callback_data='wrong_590')
-        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_590')
-        button_3 = types.InlineKeyboardButton("3", callback_data='correct_590')
-        button_4 = types.InlineKeyboardButton("4", callback_data='wrong_590')
-        markup_inline.add(button_1, button_2, button_3, button_4)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/Mf1tSFX8', reply_markup=markup_inline)
-    elif callback.data == 'wrong_589':
-        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_590':
-        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
-        connect.commit()
-        markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("Перейти в начало", callback_data='Prostr1')
-        markup_inline.add(button_1)
-        client.send_message(callback.message.chat.id,
-                            "Молодец!Переходи в следующий урок!",
-                            reply_markup=markup_inline)
-    elif callback.data == 'wrong_590':
-        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-
-
-
-    elif callback.data == 'Lesson5;':
-        client.send_message(callback.message.chat.id, "Развёртки!")
-        markup_inline = types.InlineKeyboardMarkup()
-        button_2 = types.InlineKeyboardButton("3", callback_data='wrong_591')
-        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_591')
-        button_4 = types.InlineKeyboardButton("2", callback_data='correct_591')
+        button_2 = types.InlineKeyboardButton("1", callback_data='wrong_783')
+        button_3 = types.InlineKeyboardButton("2", callback_data='correct_783')
+        button_4 = types.InlineKeyboardButton("3", callback_data='wrong_783')
         markup_inline.add(button_2, button_3, button_4)
-        client.send_photo(callback.message.chat.id, "https://postimg.cc/Y4wdXkSz", reply_markup=markup_inline)
-    elif callback.data == 'correct_591':
-        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
-        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
-        connect.commit()
-        markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("2", callback_data='correct_592')
-        button_2 = types.InlineKeyboardButton("1", callback_data='wrong_592')
-        button_3 = types.InlineKeyboardButton("3", callback_data='wrong_592')
-        markup_inline.add(button_1, button_2, button_3)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/ZW6cvgLB', reply_markup=markup_inline)
-    elif callback.data == 'wrong_591':
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/z3pK9MH8', reply_markup=markup_inline)
+    elif callback.data == 'wrong_782':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_592':
+    elif callback.data == 'correct_783':
         client.send_message(callback.message.chat.id, "Правильно! Молодец!")
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("1", callback_data='wrong_593')
-        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_593')
-        button_3 = types.InlineKeyboardButton("3", callback_data='correct_593')
-        markup_inline.add(button_1, button_2, button_3)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/2bSFJ5Nh', reply_markup=markup_inline)
-    elif callback.data == 'wrong_592':
-        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_593':
-        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
-        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
-        connect.commit()
-        markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("2", callback_data='correct_594')
-        button_2 = types.InlineKeyboardButton("1", callback_data='wrong_594')
-        button_3 = types.InlineKeyboardButton("3", callback_data='wrong_594')
-        markup_inline.add(button_1, button_2, button_3)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/fkkffkKh', reply_markup=markup_inline)
-    elif callback.data == 'wrong_593':
-        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_594':
-        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
-        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
-        connect.commit()
-        markup_inline = types.InlineKeyboardMarkup()
-        button_2 = types.InlineKeyboardButton("1", callback_data='wrong_595')
-        button_3 = types.InlineKeyboardButton("2", callback_data='wrong_595')
-        button_4 = types.InlineKeyboardButton("3", callback_data='correct_595')
-        button_1 = types.InlineKeyboardButton("4", callback_data='wrong_595')
-        markup_inline.add(button_2, button_3, button_4, button_1)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/21NdYGfz', reply_markup=markup_inline)
-    elif callback.data == 'wrong_594':
-        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_595':
-        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
-        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
-        connect.commit()
-        markup_inline = types.InlineKeyboardMarkup()
-        button_2 = types.InlineKeyboardButton("3", callback_data='wrong_596')
-        button_3 = types.InlineKeyboardButton("2", callback_data='wrong_596')
-        button_4 = types.InlineKeyboardButton("1", callback_data='correct_596')
-        markup_inline.add(button_2, button_3, button_4)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/2Vhv0WLg', reply_markup=markup_inline)
-    elif callback.data == 'wrong_595':
-        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_596':
-        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
-        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
-        connect.commit()
-        markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("2", callback_data='wrong_597')
-        button_2 = types.InlineKeyboardButton("1", callback_data='correct_597')
-        button_3 = types.InlineKeyboardButton("3", callback_data='wrong_597')
-        markup_inline.add(button_1, button_2, button_3)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/hh77Gmsh', reply_markup=markup_inline)
-    elif callback.data == 'wrong_596':
-        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_597':
-        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
-        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
-        connect.commit()
-        markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("1", callback_data='correct_598')
-        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_598')
-        button_3 = types.InlineKeyboardButton("3", callback_data='wrong_598')
-        markup_inline.add(button_1, button_2, button_3)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/MfyTmy3D', reply_markup=markup_inline)
-    elif callback.data == 'wrong_597':
-        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_598':
-        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
-        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
-        connect.commit()
-        markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("2", callback_data='correct_599')
-        button_2 = types.InlineKeyboardButton("1", callback_data='wrong_599')
-        button_3 = types.InlineKeyboardButton("3", callback_data='wrong_599')
-        button_4 = types.InlineKeyboardButton("4", callback_data='wrong_599')
+        button_1 = types.InlineKeyboardButton("7", callback_data='correct_784')
+        button_2 = types.InlineKeyboardButton("6", callback_data='wrong_784')
+        button_3 = types.InlineKeyboardButton("9", callback_data='wrong_784')
+        button_4 = types.InlineKeyboardButton("8", callback_data='wrong_784')
         markup_inline.add(button_1, button_2, button_3, button_4)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/MMBKz7wS', reply_markup=markup_inline)
-    elif callback.data == 'wrong_598':
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/TpFLxXdM', reply_markup=markup_inline)
+    elif callback.data == 'wrong_783':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_599':
+    elif callback.data == 'correct_784':
         client.send_message(callback.message.chat.id, "Правильно! Молодец!")
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("3", callback_data='wrong_600')
-        button_2 = types.InlineKeyboardButton("1", callback_data='wrong_600')
-        button_3 = types.InlineKeyboardButton("2", callback_data='correct_600')
-        button_4 = types.InlineKeyboardButton("4", callback_data='wrong_600')
-        markup_inline.add(button_1, button_2, button_3)
-        client.send_photo(callback.message.chat.id, 'https://postimg.cc/gnzXH7dL', reply_markup=markup_inline)
-    elif callback.data == 'wrong_599':
+        button_1 = types.InlineKeyboardButton("5", callback_data='wrong_785')
+        button_2 = types.InlineKeyboardButton("6", callback_data='wrong_785')
+        button_3 = types.InlineKeyboardButton("2", callback_data='wrong_785')
+        button_4 = types.InlineKeyboardButton("3", callback_data='correct_785')
+        markup_inline.add(button_1, button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/xcwC7y59', reply_markup=markup_inline)
+    elif callback.data == 'wrong_784':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
-    elif callback.data == 'correct_600':
+    elif callback.data == 'correct_785':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
         cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
         connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("Перейти в начало", callback_data='lala4')
+        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_786')
+        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_786')
+        button_4 = types.InlineKeyboardButton("3", callback_data='correct_786')
+        markup_inline.add(button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/V0SfZdbS', reply_markup=markup_inline)
+    elif callback.data == 'wrong_785':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_786':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("4", callback_data='wrong_787')
+        button_2 = types.InlineKeyboardButton("6", callback_data='correct_787')
+        button_3 = types.InlineKeyboardButton("8", callback_data='wrong_787')
+        button_4 = types.InlineKeyboardButton("7", callback_data='wrong_787')
+        markup_inline.add(button_1, button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/2byr3VGH', reply_markup=markup_inline)
+    elif callback.data == 'wrong_786':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_787':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("2", callback_data='correct_788')
+        button_2 = types.InlineKeyboardButton("1", callback_data='wrong_788')
+        button_3 = types.InlineKeyboardButton("3", callback_data='wrong_788')
+        markup_inline.add(button_1, button_2, button_3)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/zyNNKdpH', reply_markup=markup_inline)
+    elif callback.data == 'wrong_787':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_788':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("5", callback_data='correct_789')
+        button_2 = types.InlineKeyboardButton("9", callback_data='wrong_789')
+        button_3 = types.InlineKeyboardButton("7", callback_data='wrong_789')
+        button_4 = types.InlineKeyboardButton("6", callback_data='wrong_789')
+        markup_inline.add(button_1, button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/vD6wjRN6', reply_markup=markup_inline)
+    elif callback.data == 'wrong_788':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_789':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_790')
+        button_3 = types.InlineKeyboardButton("3", callback_data='correct_790')
+        button_4 = types.InlineKeyboardButton("1", callback_data='wrong_790')
+        markup_inline.add(button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/dkkpzd4K', reply_markup=markup_inline)
+    elif callback.data == 'wrong_789':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_790':
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("Перейти в начало", callback_data='Prostr2')
         markup_inline.add(button_1)
         client.send_message(callback.message.chat.id,
                             "Молодец!Переходи в следующий урок!",
                             reply_markup=markup_inline)
-    elif callback.data == 'wrong_600':
+    elif callback.data == 'wrong_790':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+
+
+
+    elif callback.data == 'Lesson5!':
+        client.send_message(callback.message.chat.id, "Шары в колбе:)")
+        markup_inline = types.InlineKeyboardMarkup()
+        button_2 = types.InlineKeyboardButton("23", callback_data='wrong_791')
+        button_3 = types.InlineKeyboardButton("12", callback_data='wrong_791')
+        button_4 = types.InlineKeyboardButton("13", callback_data='correct_791')
+        markup_inline.add(button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id, "https://postimg.cc/PNH06LY0", reply_markup=markup_inline)
+    elif callback.data == 'correct_791':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("12", callback_data='correct_792')
+        button_2 = types.InlineKeyboardButton("13", callback_data='wrong_792')
+        button_3 = types.InlineKeyboardButton("23", callback_data='wrong_792')
+        markup_inline.add(button_1, button_2, button_3)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/zbxwSPnz', reply_markup=markup_inline)
+    elif callback.data == 'wrong_791':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_792':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("14", callback_data='wrong_793')
+        button_2 = types.InlineKeyboardButton("23", callback_data='wrong_793')
+        button_3 = types.InlineKeyboardButton("12", callback_data='correct_793')
+        markup_inline.add(button_1, button_2, button_3)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/9RQZMtsv', reply_markup=markup_inline)
+    elif callback.data == 'wrong_792':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_793':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("12", callback_data='correct_794')
+        button_2 = types.InlineKeyboardButton("13", callback_data='wrong_794')
+        button_3 = types.InlineKeyboardButton("23", callback_data='wrong_794')
+        markup_inline.add(button_1, button_2, button_3)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/CBrDfngd', reply_markup=markup_inline)
+    elif callback.data == 'wrong_793':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_794':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_4 = types.InlineKeyboardButton("1", callback_data='correct_795')
+        button_1 = types.InlineKeyboardButton("2", callback_data='wrong_795')
+        markup_inline.add(button_4, button_1)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/jWZnGnCv', reply_markup=markup_inline)
+    elif callback.data == 'wrong_794':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_795':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_2 = types.InlineKeyboardButton("13", callback_data='wrong_796')
+        button_3 = types.InlineKeyboardButton("12", callback_data='wrong_796')
+        button_4 = types.InlineKeyboardButton("23", callback_data='correct_796')
+        markup_inline.add(button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/DmW4MZhd', reply_markup=markup_inline)
+    elif callback.data == 'wrong_795':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_796':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("2", callback_data='wrong_797')
+        button_2 = types.InlineKeyboardButton("1", callback_data='correct_797')
+        markup_inline.add(button_1, button_2)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/w1k1mR5H', reply_markup=markup_inline)
+    elif callback.data == 'wrong_796':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_797':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("13", callback_data='correct_798')
+        button_2 = types.InlineKeyboardButton("12", callback_data='wrong_798')
+        button_3 = types.InlineKeyboardButton("23", callback_data='wrong_798')
+        markup_inline.add(button_1, button_2, button_3)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/WhG3BqHr', reply_markup=markup_inline)
+    elif callback.data == 'wrong_797':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_798':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("13", callback_data='correct_799')
+        button_2 = types.InlineKeyboardButton("12", callback_data='wrong_799')
+        button_3 = types.InlineKeyboardButton("23", callback_data='wrong_799')
+        markup_inline.add(button_1, button_2, button_3)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/p9TL5GXY', reply_markup=markup_inline)
+    elif callback.data == 'wrong_798':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_799':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("23", callback_data='wrong_800')
+        button_2 = types.InlineKeyboardButton("12", callback_data='wrong_800')
+        button_3 = types.InlineKeyboardButton("13", callback_data='correct_800')
+        markup_inline.add(button_1, button_2, button_3)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/V0jfP2D1', reply_markup=markup_inline)
+    elif callback.data == 'wrong_799':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_800':
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("Перейти в начало", callback_data='lala3')
+        markup_inline.add(button_1)
+        client.send_message(callback.message.chat.id,
+                            "Молодец!Переходи в следующий урок!",
+                            reply_markup=markup_inline)
+    elif callback.data == 'wrong_800':
         client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
 
     elif callback.data == 'lala2':
@@ -8333,106 +8271,648 @@ def callback_handler(callback):
         markup_inline.add(item_1, item_2, item_3, item_4, item_5)
         client.send_message(callback.message.chat.id, 'Выбирай урок', reply_markup=markup_inline)
 
+
     elif callback.data == 'Lesson1>':
+        client.send_message(callback.message.chat.id, 'Чего не хватает?')
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("1", callback_data='wrong_1000')
-        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_1000')
-        button_3 = types.InlineKeyboardButton("3", callback_data='correct_1000')
+        button_2 = types.InlineKeyboardButton("1", callback_data='wrong_801')
+        button_3 = types.InlineKeyboardButton("2", callback_data='correct_801')
+        button_1 = types.InlineKeyboardButton("3", callback_data='wrong_801')
+        markup_inline.add(button_2, button_3, button_1)
+        client.send_photo(callback.message.chat.id, "https://postimg.cc/Yj7MGhHz", reply_markup=markup_inline)
+    elif callback.data == 'correct_801':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_802')
+        button_4 = types.InlineKeyboardButton("2", callback_data='correct_802')
+        button_2 = types.InlineKeyboardButton("3", callback_data='wrong_802')
+        markup_inline.add(button_3, button_4, button_2)
+        client.send_photo(callback.message.chat.id,"https://postimg.cc/Ln6SDwhq", reply_markup=markup_inline)
+    elif callback.data == 'wrong_801':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_802':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("2", callback_data='correct_803')
+        button_2 = types.InlineKeyboardButton("1", callback_data='wrong_803')
+        button_3 = types.InlineKeyboardButton("3", callback_data='wrong_803')
         markup_inline.add(button_1, button_2, button_3)
-        client.send_photo(callback.message.chat.id, 'https://i.yapx.ru/YdR07.png', reply_markup=markup_inline)
-    elif callback.data == 'correct_1000':
-        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
-        markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("4", callback_data='wrong_1001')
-        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_1001')
-        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_1001')
-        button_4 = types.InlineKeyboardButton("3", callback_data='correct_1001')
-        markup_inline.add(button_1, button_2, button_3, button_4)
-        client.send_photo(callback.message.chat.id,"https://i.yapx.ru/YdR2O.png", reply_markup=markup_inline)
-    elif callback.data == 'wrong_1000':
+        client.send_photo(callback.message.chat.id,"https://postimg.cc/K1CyZYfL", reply_markup=markup_inline)
+    elif callback.data == 'wrong_802':
         client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
-    elif callback.data == 'correct_1001':
+    elif callback.data == 'correct_803':
         client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("1", callback_data='correct_1002')
-        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_1002')
-        markup_inline.add(button_1, button_2)
-        client.send_photo(callback.message.chat.id,"https://i.yapx.ru/YdR2k.png", reply_markup=markup_inline)
-    elif callback.data == 'wrong_1001':
-        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
-    elif callback.data == 'correct_1002':
-        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
-        markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("5", callback_data='correct_1003')
-        button_2 = types.InlineKeyboardButton("6", callback_data='wrong_1003')
-        button_3 = types.InlineKeyboardButton("4", callback_data='wrong_1003')
-        button_4 = types.InlineKeyboardButton("3", callback_data='wrong_1003')
-        markup_inline.add(button_1, button_2, button_3, button_4)
-        client.send_photo(callback.message.chat.id,"https://i.yapx.ru/YdR2z.png", reply_markup=markup_inline)
-    elif callback.data == 'wrong_1002':
-        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
-    elif callback.data == 'correct_1003':
-        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
-        markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("19", callback_data='wrong_1004')
-        button_2 = types.InlineKeyboardButton("11", callback_data='correct_1004')
-        button_3 = types.InlineKeyboardButton("9", callback_data='wrong_1004')
-        button_4 = types.InlineKeyboardButton("10", callback_data='wrong_1004')
-        markup_inline.add(button_1, button_2, button_3, button_4)
-        client.send_photo(callback.message.chat.id,"https://i.yapx.ru/YdR3A.png", reply_markup=markup_inline)
-    elif callback.data == 'wrong_1003':
-        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
-    elif callback.data == 'correct_1004':
-        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
-        markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("3", callback_data='wrong_1005')
-        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_1005')
-        button_3 = types.InlineKeyboardButton("1", callback_data='correct_1005')
+        button_1 = types.InlineKeyboardButton("2", callback_data='wrong_804')
+        button_2 = types.InlineKeyboardButton("3", callback_data='correct_804')
+        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_804')
         markup_inline.add(button_1, button_2, button_3)
-        client.send_photo(callback.message.chat.id,"https://i.yapx.ru/YdR3M.png", reply_markup=markup_inline)
-    elif callback.data == 'wrong_1004':
+        client.send_photo(callback.message.chat.id,"https://postimg.cc/k6m3bhkg", reply_markup=markup_inline)
+    elif callback.data == 'wrong_803':
         client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
-    elif callback.data == 'correct_1005':
+    elif callback.data == 'correct_804':
         client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("15:10", callback_data='wrong_1006')
-        button_2 = types.InlineKeyboardButton("14:45", callback_data='wrong_1006')
-        button_3 = types.InlineKeyboardButton("13:15", callback_data='correct_1006')
-        button_4 = types.InlineKeyboardButton("13:30", callback_data='wrong_1006')
-        markup_inline.add(button_1, button_2, button_3, button_4)
-        client.send_photo(callback.message.chat.id,"https://i.yapx.ru/YdR33.png", reply_markup=markup_inline)
-    elif callback.data == 'wrong_1005':
+        button_2 = types.InlineKeyboardButton("3", callback_data='wrong_805')
+        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_805')
+        button_4 = types.InlineKeyboardButton("2", callback_data='correct_805')
+        markup_inline.add(button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id,"https://postimg.cc/zHzsdHDm", reply_markup=markup_inline)
+    elif callback.data == 'wrong_804':
         client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
-    elif callback.data == 'correct_1006':
+    elif callback.data == 'correct_805':
         client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
         markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("1", callback_data='wrong_1007')
-        button_2 = types.InlineKeyboardButton("2", callback_data='correct_1007')
-        markup_inline.add(button_1, button_2)
-        client.send_photo(callback.message.chat.id,"https://i.yapx.ru/YdR4O.png", reply_markup=markup_inline)
-    elif callback.data == 'wrong_1006':
-        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
-    elif callback.data == 'correct_1007':
-        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
-        markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("Нет", callback_data='wrong_1008')
-        button_2 = types.InlineKeyboardButton("Да", callback_data='correct_1008')
-        markup_inline.add(button_1, button_2)
-        client.send_photo(callback.message.chat.id,"https://i.yapx.ru/YdR4n.png", reply_markup=markup_inline)
-    elif callback.data == 'wrong_1007':
-        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
-    elif callback.data == 'correct_1008':
-        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
-        markup_inline = types.InlineKeyboardMarkup()
-        button_1 = types.InlineKeyboardButton("3", callback_data='correct_1009')
-        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_1009')
-        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_1009')
+        button_1 = types.InlineKeyboardButton("2", callback_data='wrong_806')
+        button_2 = types.InlineKeyboardButton("3", callback_data='correct_806')
+        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_806')
         markup_inline.add(button_1, button_2, button_3)
-        client.send_photo(callback.message.chat.id,"", reply_markup=markup_inline)
-    elif callback.data == 'wrong_1008':
+        client.send_photo(callback.message.chat.id,"https://postimg.cc/SjVFndVm", reply_markup=markup_inline)
+    elif callback.data == 'wrong_805':
         client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
-    elif callback.data == 'correct_1009':
-        client.send_message(callback.message.chat.id, "Правильно! Молодец! Ура, ты прошёл раздел логика!! Давай начнём развитие нового когнитивного навыка, выбирай какой!!!")
+    elif callback.data == 'correct_806':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("2", callback_data='correct_807')
+        button_2 = types.InlineKeyboardButton("1", callback_data='wrong_807')
+        button_3 = types.InlineKeyboardButton("3", callback_data='wrong_807')
+        markup_inline.add(button_1, button_2, button_3)
+        client.send_photo(callback.message.chat.id,"https://postimg.cc/jLkpXjG9", reply_markup=markup_inline)
+    elif callback.data == 'wrong_806':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_807':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_2 = types.InlineKeyboardButton("3", callback_data='wrong_808')
+        button_3 = types.InlineKeyboardButton("2", callback_data='wrong_808')
+        button_4 = types.InlineKeyboardButton("1", callback_data='correct_808')
+        markup_inline.add(button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id, "https://postimg.cc/Ff0wNV75", reply_markup=markup_inline)
+    elif callback.data == 'wrong_807':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_808':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_2 = types.InlineKeyboardButton("1", callback_data='wrong_809')
+        button_3 = types.InlineKeyboardButton("2", callback_data='wrong_809')
+        button_4 = types.InlineKeyboardButton("3", callback_data='correct_809')
+        markup_inline.add(button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id,"https://postimg.cc/620SG6rM", reply_markup=markup_inline)
+    elif callback.data == 'wrong_808':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_809':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_4 = types.InlineKeyboardButton("3", callback_data='wrong_810')
+        button_5 = types.InlineKeyboardButton("1", callback_data='wrong_810')
+        button_6 = types.InlineKeyboardButton("2", callback_data='correct_810')
+        markup_inline.add(button_4, button_5, button_6)
+        client.send_photo(callback.message.chat.id,"https://postimg.cc/HjYF15mR", reply_markup=markup_inline)
+    elif callback.data == 'wrong_809':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_810':
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("Перейти в начало", callback_data='Logic3')
+        markup_inline.add(button_1)
+        client.send_message(callback.message.chat.id, 'Ты молодец, теперь переходи в другие уроки!',reply_markup=markup_inline)
+    elif callback.data == 'wrong_810':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+
+
+
+    elif callback.data == 'Lesson2>':
+        client.send_message(callback.message.chat.id, 'Что лишнее?')
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("3", callback_data='wrong_811')
+        button_2 = types.InlineKeyboardButton("4", callback_data='wrong_811')
+        button_3 = types.InlineKeyboardButton("2", callback_data='correct_811')
+        button_4 = types.InlineKeyboardButton("1", callback_data='wrong_811')
+        markup_inline.add(button_1, button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/KRVWTHTh', reply_markup=markup_inline)
+    elif callback.data == 'correct_811':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_2 = types.InlineKeyboardButton("3", callback_data='wrong_812')
+        button_3 = types.InlineKeyboardButton("2", callback_data='wrong_812')
+        button_4 = types.InlineKeyboardButton("1", callback_data='correct_812')
+        button_1 = types.InlineKeyboardButton("4", callback_data='wrong_812')
+        markup_inline.add(button_2, button_3, button_4, button_1)
+        client.send_photo(callback.message.chat.id, "https://postimg.cc/zygcFFwb", reply_markup=markup_inline)
+    elif callback.data == 'wrong_811':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_812':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_2 = types.InlineKeyboardButton("3", callback_data='wrong_813')
+        button_3 = types.InlineKeyboardButton("2", callback_data='wrong_813')
+        button_4 = types.InlineKeyboardButton("1", callback_data='correct_813')
+        button_1 = types.InlineKeyboardButton("4", callback_data='wrong_813')
+        markup_inline.add(button_2, button_3, button_4, button_1)
+        client.send_photo(callback.message.chat.id, "https://postimg.cc/PLnF3vK6", reply_markup=markup_inline)
+    elif callback.data == 'wrong_812':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_813':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("3", callback_data='wrong_814')
+        button_2 = types.InlineKeyboardButton("2", callback_data='correct_814')
+        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_814')
+        button_4 = types.InlineKeyboardButton("4", callback_data='wrong_814')
+        markup_inline.add(button_1, button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id, "https://postimg.cc/Q9XYsL21", reply_markup=markup_inline)
+    elif callback.data == 'wrong_813':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_814':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("4", callback_data='correct_815')
+        button_2 = types.InlineKeyboardButton("3", callback_data='wrong_815')
+        button_3 = types.InlineKeyboardButton("2", callback_data='wrong_815')
+        button_4 = types.InlineKeyboardButton("1", callback_data='wrong_815')
+        markup_inline.add(button_1, button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id,"https://postimg.cc/RqpprDXJ", reply_markup=markup_inline)
+    elif callback.data == 'wrong_814':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_815':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("1", callback_data='wrong_816')
+        button_2 = types.InlineKeyboardButton("3", callback_data='wrong_816')
+        button_3 = types.InlineKeyboardButton("4", callback_data='wrong_816')
+        button_4 = types.InlineKeyboardButton("2", callback_data='correct_816')
+        markup_inline.add(button_1, button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id,"https://postimg.cc/XpZHnkzH", reply_markup=markup_inline)
+    elif callback.data == 'wrong_815':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_816':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("1", callback_data='wrong_817')
+        button_2 = types.InlineKeyboardButton("3", callback_data='correct_817')
+        button_3 = types.InlineKeyboardButton("2", callback_data='wrong_817')
+        button_4 = types.InlineKeyboardButton("4", callback_data='wrong_817')
+        markup_inline.add(button_1, button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id,"https://postimg.cc/hfHCv7FS", reply_markup=markup_inline)
+    elif callback.data == 'wrong_816':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_817':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_818')
+        button_3 = types.InlineKeyboardButton("3", callback_data='wrong_818')
+        button_4 = types.InlineKeyboardButton("1", callback_data='correct_818')
+        button_1 = types.InlineKeyboardButton("4", callback_data='wrong_818')
+        markup_inline.add(button_2, button_3, button_4, button_1)
+        client.send_photo(callback.message.chat.id,"https://postimg.cc/gwK4gSxJ", reply_markup=markup_inline)
+    elif callback.data == 'wrong_817':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_818':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("1", callback_data='wrong_819')
+        button_2 = types.InlineKeyboardButton("3", callback_data='correct_819')
+        button_3 = types.InlineKeyboardButton("2", callback_data='wrong_819')
+        button_4 = types.InlineKeyboardButton("4", callback_data='wrong_819')
+        markup_inline.add(button_1, button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id,"https://postimg.cc/cg9hSvMG", reply_markup=markup_inline)
+    elif callback.data == 'wrong_818':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_819':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("1", callback_data='wrong_820')
+        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_820')
+        button_3 = types.InlineKeyboardButton("4", callback_data='correct_820')
+        button_4 = types.InlineKeyboardButton("3", callback_data='wrong_820')
+        markup_inline.add(button_1, button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id,"https://postimg.cc/JtFxYBzb", reply_markup=markup_inline)
+    elif callback.data == 'wrong_819':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'wrong_820':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_820':
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("Перейти в начало", callback_data='Logic3')
+        markup_inline.add(button_1)
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!\nТеперь переходи в следующий урок и изучай логику дальше!", reply_markup=markup_inline)
+
+    elif callback.data == 'Lesson3>':
+        client.send_message(callback.message.chat.id, 'Самые-самые)')
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("3", callback_data='wrong_821')
+        button_2 = types.InlineKeyboardButton("1", callback_data='wrong_821')
+        button_3 = types.InlineKeyboardButton("2", callback_data='correct_821')
+        markup_inline.add(button_1, button_2, button_3)
+        client.send_photo(callback.message.chat.id, "https://postimg.cc/q66sHjv2", reply_markup=markup_inline)
+    elif callback.data == 'correct_821':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_2 = types.InlineKeyboardButton("3", callback_data='wrong_822')
+        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_822')
+        button_4 = types.InlineKeyboardButton("2", callback_data='correct_822')
+        markup_inline.add(button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id, "https://postimg.cc/XXtKkSsL", reply_markup=markup_inline)
+    elif callback.data == 'wrong_821':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_822':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("1", callback_data='wrong_823')
+        button_2 = types.InlineKeyboardButton("3", callback_data='correct_823')
+        button_3 = types.InlineKeyboardButton("2", callback_data='wrong_823')
+        markup_inline.add(button_1, button_2, button_3)
+        client.send_photo(callback.message.chat.id, "https://postimg.cc/ZC38f7gS", reply_markup=markup_inline)
+    elif callback.data == 'wrong_822':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_823':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("1", callback_data='correct_824')
+        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_824')
+        button_3 = types.InlineKeyboardButton("3", callback_data='wrong_824')
+        markup_inline.add(button_1, button_2, button_3)
+        client.send_photo(callback.message.chat.id,"https://postimg.cc/BjBx3847", reply_markup=markup_inline)
+    elif callback.data == 'wrong_823':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_824':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_3 = types.InlineKeyboardButton("2", callback_data='wrong_825')
+        button_4 = types.InlineKeyboardButton("1", callback_data='correct_825')
+        button_1 = types.InlineKeyboardButton("3", callback_data='wrong_825')
+        markup_inline.add(button_3, button_4, button_1)
+        client.send_photo(callback.message.chat.id,"https://postimg.cc/bGY1wzvy", reply_markup=markup_inline)
+    elif callback.data == 'wrong_824':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_825':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_826')
+        button_3 = types.InlineKeyboardButton("1", callback_data='correct_826')
+        button_4 = types.InlineKeyboardButton("3", callback_data='wrong_826')
+        markup_inline.add(button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id,"https://postimg.cc/MXfVT3zQ", reply_markup=markup_inline)
+    elif callback.data == 'wrong_825':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_826':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_3 = types.InlineKeyboardButton("2", callback_data='wrong_827')
+        button_4 = types.InlineKeyboardButton("3", callback_data='correct_827')
+        button_1 = types.InlineKeyboardButton("1", callback_data='wrong_827')
+        markup_inline.add(button_3, button_4, button_1)
+        client.send_photo(callback.message.chat.id, "https://postimg.cc/VJgbT3W3", reply_markup=markup_inline)
+    elif callback.data == 'wrong_826':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_827':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("3", callback_data='correct_828')
+        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_828')
+        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_828')
+        markup_inline.add(button_1, button_2, button_3)
+        client.send_photo(callback.message.chat.id,"https://postimg.cc/HJL7CBSj", reply_markup=markup_inline)
+    elif callback.data == 'wrong_827':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_828':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_829')
+        button_4 = types.InlineKeyboardButton("2", callback_data='correct_829')
+        button_1 = types.InlineKeyboardButton("3", callback_data='wrong_829')
+        markup_inline.add(button_3, button_4, button_1)
+        client.send_photo(callback.message.chat.id, "https://postimg.cc/YLQvxVSD", reply_markup=markup_inline)
+    elif callback.data == 'wrong_828':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_829':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_3 = types.InlineKeyboardButton("2", callback_data='wrong_830')
+        button_4 = types.InlineKeyboardButton("1", callback_data='correct_830')
+        button_1 = types.InlineKeyboardButton("3", callback_data='wrong_830')
+        markup_inline.add(button_3, button_4, button_1)
+        client.send_photo(callback.message.chat.id,"https://postimg.cc/jnY5CXhH", reply_markup=markup_inline)
+    elif callback.data == 'wrong_829':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'wrong_830':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_830':
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("Перейти в начало", callback_data='Logic3')
+        markup_inline.add(button_1)
+        client.send_message(callback.message.chat.id, "Правильно! Молодец! Переходи в следующий урок!",reply_markup=markup_inline)
+
+    elif callback.data == 'Lesson4>':
+        client.send_message(callback.message.chat.id, 'Детектив!')
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("2", callback_data='wrong_831')
+        button_2 = types.InlineKeyboardButton("3", callback_data='wrong_831')
+        button_3 = types.InlineKeyboardButton("1", callback_data='correct_831')
+        button_4 = types.InlineKeyboardButton("4", callback_data='wrong_831')
+        markup_inline.add(button_1, button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/bZSJPrkc', reply_markup=markup_inline)
+    elif callback.data == 'correct_831':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_2 = types.InlineKeyboardButton("3", callback_data='wrong_832')
+        button_3 = types.InlineKeyboardButton("2", callback_data='wrong_832')
+        button_4 = types.InlineKeyboardButton("1", callback_data='correct_832')
+        button_1 = types.InlineKeyboardButton("4", callback_data='wrong_832')
+        markup_inline.add(button_2, button_3, button_4, button_1)
+        client.send_photo(callback.message.chat.id, "https://postimg.cc/HjLTHj1Z", reply_markup=markup_inline)
+    elif callback.data == 'wrong_831':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_832':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("3", callback_data='wrong_833')
+        button_2 = types.InlineKeyboardButton("1", callback_data='wrong_833')
+        button_3 = types.InlineKeyboardButton("4", callback_data='correct_833')
+        button_4 = types.InlineKeyboardButton("2", callback_data='wrong_833')
+        markup_inline.add(button_1, button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id, "https://postimg.cc/9Dyh17yM", reply_markup=markup_inline)
+    elif callback.data == 'wrong_832':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_833':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("4", callback_data='wrong_834')
+        button_2 = types.InlineKeyboardButton("3", callback_data='wrong_834')
+        button_3 = types.InlineKeyboardButton("2", callback_data='correct_834')
+        button_4 = types.InlineKeyboardButton("1", callback_data='wrong_834')
+        markup_inline.add(button_1, button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id, "https://postimg.cc/WttcCK0x", reply_markup=markup_inline)
+    elif callback.data == 'wrong_833':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_834':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("4", callback_data='wrong_835')
+        button_2 = types.InlineKeyboardButton("3", callback_data='wrong_835')
+        button_3 = types.InlineKeyboardButton("1", callback_data='correct_835')
+        button_4 = types.InlineKeyboardButton("2", callback_data='wrong_835')
+        markup_inline.add(button_1, button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id, "https://postimg.cc/CRG3bVVn", reply_markup=markup_inline)
+    elif callback.data == 'wrong_834':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_835':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_836')
+        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_836')
+        button_4 = types.InlineKeyboardButton("3", callback_data='correct_836')
+        button_1 = types.InlineKeyboardButton("4", callback_data='wrong_836')
+        markup_inline.add(button_2, button_3, button_4, button_1)
+        client.send_photo(callback.message.chat.id, "https://postimg.cc/sBKb09xV", reply_markup=markup_inline)
+    elif callback.data == 'wrong_835':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_836':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("2", callback_data='wrong_837')
+        button_2 = types.InlineKeyboardButton("1", callback_data='wrong_837')
+        button_3 = types.InlineKeyboardButton("4", callback_data='correct_837')
+        button_4 = types.InlineKeyboardButton("3", callback_data='wrong_837')
+        markup_inline.add(button_1, button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id, "https://postimg.cc/w1pPqbsq", reply_markup=markup_inline)
+    elif callback.data == 'wrong_836':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_837':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_2 = types.InlineKeyboardButton("3", callback_data='wrong_838')
+        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_838')
+        button_4 = types.InlineKeyboardButton("2", callback_data='correct_838')
+        button_1 = types.InlineKeyboardButton("4", callback_data='wrong_838')
+        markup_inline.add(button_2, button_3, button_4, button_1)
+        client.send_photo(callback.message.chat.id, "https://postimg.cc/PCX4FGww", reply_markup=markup_inline)
+    elif callback.data == 'wrong_837':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_838':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("4", callback_data='correct_839')
+        button_2 = types.InlineKeyboardButton("3", callback_data='wrong_839')
+        button_3 = types.InlineKeyboardButton("2", callback_data='wrong_839')
+        button_4 = types.InlineKeyboardButton("1", callback_data='wrong_839')
+        markup_inline.add(button_1, button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id, "https://postimg.cc/jnY6HBTC", reply_markup=markup_inline)
+    elif callback.data == 'wrong_838':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_839':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("1", callback_data='wrong_840')
+        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_840')
+        button_3 = types.InlineKeyboardButton("4", callback_data='correct_840')
+        button_4 = types.InlineKeyboardButton("3", callback_data='wrong_840')
+        markup_inline.add(button_1, button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id, "https://postimg.cc/zV0tNX5j", reply_markup=markup_inline)
+    elif callback.data == 'wrong_839':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'wrong_840':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_840':
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("Перейти в начало", callback_data='Logic3')
+        markup_inline.add(button_1)
+        client.send_message(callback.message.chat.id, "Правильно! Молодец! Переходи и выполняй последний урок!", reply_markup=markup_inline)
+
+    elif callback.data == 'Lesson5>':
+        client.send_message(callback.message.chat.id, 'Небылицы!')
+        markup_inline = types.InlineKeyboardMarkup()
+        button_3 = types.InlineKeyboardButton("1", callback_data='correct_841')
+        button_4 = types.InlineKeyboardButton("2", callback_data='wrong_841')
+        markup_inline.add(button_3, button_4)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/s1Zs1q17', reply_markup=markup_inline)
+    elif callback.data == 'correct_841':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_3 = types.InlineKeyboardButton("2", callback_data='wrong_842')
+        button_4 = types.InlineKeyboardButton("1", callback_data='correct_842')
+        markup_inline.add(button_3, button_4)
+        client.send_photo(callback.message.chat.id, "https://postimg.cc/q6ff8Bgn", reply_markup=markup_inline)
+    elif callback.data == 'wrong_841':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_842':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_3 = types.InlineKeyboardButton("1", callback_data='correct_843')
+        button_4 = types.InlineKeyboardButton("2", callback_data='wrong_843')
+        markup_inline.add(button_3, button_4)
+        client.send_photo(callback.message.chat.id, "https://postimg.cc/Jyktm0wH", reply_markup=markup_inline)
+    elif callback.data == 'wrong_842':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_843':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("2", callback_data='correct_844')
+        button_2 = types.InlineKeyboardButton("1", callback_data='wrong_844')
+        markup_inline.add(button_1, button_2)
+        client.send_photo(callback.message.chat.id, "https://postimg.cc/18L5WSgm", reply_markup=markup_inline)
+    elif callback.data == 'wrong_843':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_844':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("2", callback_data='wrong_845')
+        button_2 = types.InlineKeyboardButton("1", callback_data='correct_845')
+        markup_inline.add(button_1, button_2)
+        client.send_photo(callback.message.chat.id, "https://postimg.cc/yJc6tG9F", reply_markup=markup_inline)
+    elif callback.data == 'wrong_844':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_845':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_846')
+        button_4 = types.InlineKeyboardButton("2", callback_data='correct_846')
+        markup_inline.add(button_3, button_4)
+        client.send_photo(callback.message.chat.id, "https://postimg.cc/30JKyJqB", reply_markup=markup_inline)
+    elif callback.data == 'wrong_845':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_846':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_3 = types.InlineKeyboardButton("2", callback_data='correct_847')
+        button_4 = types.InlineKeyboardButton("1", callback_data='wrong_847')
+        markup_inline.add(button_3, button_4)
+        client.send_photo(callback.message.chat.id, "https://postimg.cc/BLmrV5hT", reply_markup=markup_inline)
+    elif callback.data == 'wrong_846':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_847':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("1", callback_data='wrong_848')
+        button_2 = types.InlineKeyboardButton("2", callback_data='correct_848')
+        markup_inline.add(button_1, button_2)
+        client.send_photo(callback.message.chat.id, "https://postimg.cc/nMP8Kk9Z", reply_markup=markup_inline)
+    elif callback.data == 'wrong_847':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_848':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_3 = types.InlineKeyboardButton("1", callback_data='correct_849')
+        button_4 = types.InlineKeyboardButton("2", callback_data='wrong_849')
+        markup_inline.add(button_3, button_4)
+        client.send_photo(callback.message.chat.id, "https://postimg.cc/JGf9vzQ2", reply_markup=markup_inline)
+    elif callback.data == 'wrong_848':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_849':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("2", callback_data='correct_850')
+        button_2 = types.InlineKeyboardButton("1", callback_data='wrong_850')
+        markup_inline.add(button_1, button_2)
+        client.send_photo(callback.message.chat.id, "https://postimg.cc/S21PrSsV", reply_markup=markup_inline)
+    elif callback.data == 'wrong_849':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'wrong_850':
+        client.send_message(callback.message.chat.id, "Неправильно, попробуй ещё раз.")
+    elif callback.data == 'correct_850':
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("Перейти в начало", callback_data='lala2')
+        markup_inline.add(button_1)
+        client.send_message(callback.message.chat.id,"Правильно! Молодец! Ура, ты прошёл раздел логика!! Давай начнём развитие нового когнитивного навыка!!!", reply_markup=markup_inline)
 
     elif callback.data == 'Math3':
         markup_inline = types.InlineKeyboardMarkup()
@@ -8443,6 +8923,616 @@ def callback_handler(callback):
         item_5 = types.InlineKeyboardButton('Урок 5', callback_data='Lesson5]')
         markup_inline.add(item_1, item_2, item_3, item_4, item_5)
         client.send_message(callback.message.chat.id, 'Выбирай урок', reply_markup=markup_inline)
+
+    elif callback.data == 'Lesson1]':
+        client.send_message(callback.message.chat.id, "Изменяем фигуры:)")
+        markup_inline = types.InlineKeyboardMarkup()
+        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_851')
+        button_3 = types.InlineKeyboardButton("1", callback_data='correct_851')
+        markup_inline.add(button_2, button_3)
+        client.send_photo(callback.message.chat.id,"https://postimg.cc/MvypsHk9", reply_markup=markup_inline)
+    elif callback.data == 'correct_851':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_2 = types.InlineKeyboardButton("2", callback_data='correct_852')
+        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_852')
+        markup_inline.add(button_2, button_3)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/cKJ14cvz', reply_markup=markup_inline)
+    elif callback.data == 'wrong_851':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_852':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("2", callback_data='correct_853')
+        button_2 = types.InlineKeyboardButton("1", callback_data='wrong_853')
+        markup_inline.add(button_1, button_2)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/qhhk2MXX', reply_markup=markup_inline)
+    elif callback.data == 'wrong_852':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_853':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("1", callback_data='wrong_854')
+        button_2 = types.InlineKeyboardButton("2", callback_data='correct_854')
+        markup_inline.add(button_1, button_2)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/cgpdhyFq', reply_markup=markup_inline)
+    elif callback.data == 'wrong_853':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_854':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("1", callback_data='correct_855')
+        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_855')
+        markup_inline.add(button_1, button_2)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/w3NqvMB9', reply_markup=markup_inline)
+    elif callback.data == 'wrong_854':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_855':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_856')
+        button_3 = types.InlineKeyboardButton("1", callback_data='correct_856')
+        markup_inline.add(button_2, button_3)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/Mvbz7LR4', reply_markup=markup_inline)
+    elif callback.data == 'wrong_855':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_856':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_2 = types.InlineKeyboardButton("1", callback_data='correct_857')
+        button_3 = types.InlineKeyboardButton("2", callback_data='wrong_857')
+        markup_inline.add(button_2, button_3)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/3kt76DtF', reply_markup=markup_inline)
+    elif callback.data == 'wrong_856':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_857':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_858')
+        button_3 = types.InlineKeyboardButton("1", callback_data='correct_858')
+        markup_inline.add(button_2, button_3)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/zL351XMZ', reply_markup=markup_inline)
+    elif callback.data == 'wrong_857':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_858':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("1", callback_data='correct_859')
+        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_859')
+        markup_inline.add(button_1, button_2)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/bSfjb0vp', reply_markup=markup_inline)
+    elif callback.data == 'wrong_858':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_859':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("1", callback_data='wrong_860')
+        button_2 = types.InlineKeyboardButton("2", callback_data='correct_860')
+        markup_inline.add(button_1, button_2)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/WdYLSc49', reply_markup=markup_inline)
+    elif callback.data == 'wrong_859':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_860':
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("Перейти в начало", callback_data='Math3')
+        markup_inline.add(button_1)
+        client.send_message(callback.message.chat.id,"Молодец!Переходи в следующий урок и изучай математику!", reply_markup=markup_inline)
+    elif callback.data == 'wrong_860':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+
+
+    elif callback.data == 'Lesson2]':
+        client.send_message(callback.message.chat.id, "Обмен!")
+        markup_inline = types.InlineKeyboardMarkup()
+        button_2 = types.InlineKeyboardButton("Да", callback_data='wrong_861')
+        button_3 = types.InlineKeyboardButton("Нет", callback_data='correct_861')
+        markup_inline.add(button_2, button_3)
+        client.send_photo(callback.message.chat.id,"https://postimg.cc/cvyXSDbs", reply_markup=markup_inline)
+    elif callback.data == 'correct_861':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_3 = types.InlineKeyboardButton("Да", callback_data='wrong_862')
+        button_4 = types.InlineKeyboardButton("Нет", callback_data='correct_862')
+        markup_inline.add(button_3, button_4)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/MctD1zKT', reply_markup=markup_inline)
+    elif callback.data == 'wrong_861':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_862':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_3 = types.InlineKeyboardButton("Нет", callback_data='correct_863')
+        button_4 = types.InlineKeyboardButton("Да", callback_data='wrong_863')
+        markup_inline.add(button_3, button_4)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/dk19BgL9', reply_markup=markup_inline)
+    elif callback.data == 'wrong_862':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_863':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("2", callback_data='wrong_864')
+        button_2 = types.InlineKeyboardButton("1", callback_data='correct_864')
+        markup_inline.add(button_1, button_2)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/5YRSkpzW', reply_markup=markup_inline)
+    elif callback.data == 'wrong_863':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_864':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("Да", callback_data='correct_865')
+        button_2 = types.InlineKeyboardButton("Нет", callback_data='wrong_865')
+        markup_inline.add(button_1, button_2)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/3kFCH3GB', reply_markup=markup_inline)
+    elif callback.data == 'wrong_864':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_865':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("2", callback_data='correct_866')
+        button_2 = types.InlineKeyboardButton("1", callback_data='wrong_866')
+        markup_inline.add(button_1, button_2)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/FfFbrwgQ', reply_markup=markup_inline)
+    elif callback.data == 'wrong_865':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_866':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("Да", callback_data='correct_867')
+        button_2 = types.InlineKeyboardButton("Нет", callback_data='wrong_867')
+        markup_inline.add(button_1, button_2)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/kVZ20HTs', reply_markup=markup_inline)
+    elif callback.data == 'wrong_866':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_867':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("Нет", callback_data='wrong_868')
+        button_2 = types.InlineKeyboardButton("Да", callback_data='correct_868')
+        markup_inline.add(button_1, button_2)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/N2v5MHqr', reply_markup=markup_inline)
+    elif callback.data == 'wrong_867':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_868':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_3 = types.InlineKeyboardButton("Да", callback_data='wrong_869')
+        button_4 = types.InlineKeyboardButton("Нет", callback_data='correct_869')
+        markup_inline.add(button_3, button_4)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/9rVDHZY6', reply_markup=markup_inline)
+    elif callback.data == 'wrong_868':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_869':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("Нет", callback_data='wrong_870')
+        button_2 = types.InlineKeyboardButton("Да", callback_data='correct_870')
+        markup_inline.add(button_1, button_2)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/xX1qcQ7g', reply_markup=markup_inline)
+    elif callback.data == 'wrong_869':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_870':
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("Перейти в начало", callback_data='Math3')
+        markup_inline.add(button_1)
+        client.send_message(callback.message.chat.id,"Молодец!Приступай к следующему уроку!",reply_markup=markup_inline)
+    elif callback.data == 'wrong_870':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+
+
+    elif callback.data == 'Lesson3]':
+        client.send_message(callback.message.chat.id, "Счёт до 10!")
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("4", callback_data='wrong_871')
+        button_2 = types.InlineKeyboardButton("7", callback_data='wrong_871')
+        button_3 = types.InlineKeyboardButton("2", callback_data='correct_871')
+        button_4 = types.InlineKeyboardButton("5", callback_data='wrong_871')
+        markup_inline.add(button_1, button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id,"https://postimg.cc/ZCT5MZTZ", reply_markup=markup_inline)
+    elif callback.data == 'correct_871':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("5", callback_data='wrong_872')
+        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_872')
+        button_3 = types.InlineKeyboardButton("6", callback_data='wrong_872')
+        button_4 = types.InlineKeyboardButton("4", callback_data='correct_872')
+        markup_inline.add(button_1, button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/9D0FcpRn', reply_markup=markup_inline)
+    elif callback.data == 'wrong_871':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_872':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("6", callback_data='correct_873')
+        button_2 = types.InlineKeyboardButton("3", callback_data='wrong_873')
+        button_3 = types.InlineKeyboardButton("8", callback_data='wrong_873')
+        button_4 = types.InlineKeyboardButton("4", callback_data='wrong_873')
+        markup_inline.add(button_1, button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/9RdcLgKr', reply_markup=markup_inline)
+    elif callback.data == 'wrong_872':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_873':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("2", callback_data='wrong_874')
+        button_2 = types.InlineKeyboardButton("4", callback_data='wrong_874')
+        button_3 = types.InlineKeyboardButton("5", callback_data='correct_874')
+        button_4 = types.InlineKeyboardButton("8", callback_data='wrong_874')
+        markup_inline.add(button_1, button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/309YT4Kh', reply_markup=markup_inline)
+    elif callback.data == 'wrong_873':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_874':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_3 = types.InlineKeyboardButton("7", callback_data='wrong_875')
+        button_4 = types.InlineKeyboardButton("4", callback_data='correct_875')
+        button_1 = types.InlineKeyboardButton("9", callback_data='wrong_875')
+        button_2 = types.InlineKeyboardButton("4", callback_data='wrong_875')
+        markup_inline.add(button_3, button_4, button_1, button_2)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/8FrWwWGj', reply_markup=markup_inline)
+    elif callback.data == 'wrong_874':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_875':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("5", callback_data='wrong_876')
+        button_2 = types.InlineKeyboardButton("2", callback_data='correct_876')
+        button_3 = types.InlineKeyboardButton("7", callback_data='wrong_876')
+        button_4 = types.InlineKeyboardButton("6", callback_data='wrong_876')
+        markup_inline.add(button_1, button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/PPwjX5d1', reply_markup=markup_inline)
+    elif callback.data == 'wrong_875':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_876':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_3 = types.InlineKeyboardButton("4", callback_data='wrong_877')
+        button_4 = types.InlineKeyboardButton("5", callback_data='correct_877')
+        button_1 = types.InlineKeyboardButton("8", callback_data='wrong_877')
+        button_2 = types.InlineKeyboardButton("7", callback_data='wrong_877')
+        markup_inline.add(button_3, button_4, button_2, button_1)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/Q9t2RX69', reply_markup=markup_inline)
+    elif callback.data == 'wrong_876':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_877':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("3", callback_data='correct_878')
+        button_2 = types.InlineKeyboardButton("4", callback_data='wrong_878')
+        button_3 = types.InlineKeyboardButton("6", callback_data='wrong_878')
+        button_4 = types.InlineKeyboardButton("7", callback_data='wrong_878')
+        markup_inline.add(button_1, button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/GHYW0gjQ', reply_markup=markup_inline)
+    elif callback.data == 'wrong_877':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_878':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("7", callback_data='wrong_879')
+        button_2 = types.InlineKeyboardButton("4", callback_data='wrong_879')
+        button_3 = types.InlineKeyboardButton("3", callback_data='correct_879')
+        button_4 = types.InlineKeyboardButton("5", callback_data='wrong_879')
+        markup_inline.add(button_1, button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/WD9KmB22', reply_markup=markup_inline)
+    elif callback.data == 'wrong_878':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_879':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("6", callback_data='wrong_880')
+        button_2 = types.InlineKeyboardButton("7", callback_data='wrong_880')
+        button_3 = types.InlineKeyboardButton("2", callback_data='wrong_880')
+        button_4 = types.InlineKeyboardButton("4", callback_data='correct_880')
+        markup_inline.add(button_1, button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/njCW33zq', reply_markup=markup_inline)
+    elif callback.data == 'wrong_879':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_880':
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("Перейти в начало", callback_data='Math3')
+        markup_inline.add(button_1)
+        client.send_message(callback.message.chat.id, "Молодец!Приступай к следующему уроку!", reply_markup=markup_inline)
+    elif callback.data == 'wrong_880':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+
+
+
+    elif callback.data == 'Lesson4]':
+        client.send_message(callback.message.chat.id, "Продолжи ряд!")
+        markup_inline = types.InlineKeyboardMarkup()
+        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_881')
+        button_3 = types.InlineKeyboardButton("1", callback_data='correct_881')
+        markup_inline.add(button_2, button_3)
+        client.send_photo(callback.message.chat.id,"https://postimg.cc/ppNSBYtn", reply_markup=markup_inline)
+    elif callback.data == 'correct_881':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_882')
+        button_4 = types.InlineKeyboardButton("2", callback_data='correct_882')
+        markup_inline.add(button_3, button_4)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/zLf2fxT4', reply_markup=markup_inline)
+    elif callback.data == 'wrong_881':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_882':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("1", callback_data='correct_883')
+        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_883')
+        markup_inline.add(button_1, button_2)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/wyyWX3fV', reply_markup=markup_inline)
+    elif callback.data == 'wrong_882':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_883':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_2 = types.InlineKeyboardButton("1", callback_data='correct_884')
+        button_3 = types.InlineKeyboardButton("2", callback_data='wrong_884')
+        markup_inline.add(button_2, button_3)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/xJw6tYBS', reply_markup=markup_inline)
+    elif callback.data == 'wrong_883':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_884':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_3 = types.InlineKeyboardButton("2", callback_data='wrong_885')
+        button_4 = types.InlineKeyboardButton("1", callback_data='correct_885')
+        markup_inline.add(button_3, button_4)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/ZChfNbr8', reply_markup=markup_inline)
+    elif callback.data == 'wrong_884':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_885':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("3", callback_data='correct_886')
+        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_886')
+        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_886')
+        markup_inline.add(button_1, button_2, button_3)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/w1q0Ww43', reply_markup=markup_inline)
+    elif callback.data == 'wrong_885':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_886':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_2 = types.InlineKeyboardButton("3", callback_data='wrong_887')
+        button_3 = types.InlineKeyboardButton("2", callback_data='wrong_887')
+        button_4 = types.InlineKeyboardButton("1", callback_data='correct_887')
+        markup_inline.add(button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/gwr4pnWW', reply_markup=markup_inline)
+    elif callback.data == 'wrong_886':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_887':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_2 = types.InlineKeyboardButton("1", callback_data='wrong_888')
+        button_3 = types.InlineKeyboardButton("2", callback_data='correct_888')
+        markup_inline.add(button_2, button_3)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/VSTgkmfb', reply_markup=markup_inline)
+    elif callback.data == 'wrong_887':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_888':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_889')
+        button_3 = types.InlineKeyboardButton("3", callback_data='wrong_889')
+        button_4 = types.InlineKeyboardButton("1", callback_data='correct_889')
+        markup_inline.add(button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/0K1C7nJk', reply_markup=markup_inline)
+    elif callback.data == 'wrong_888':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_889':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_2 = types.InlineKeyboardButton("1", callback_data='wrong_890')
+        button_3 = types.InlineKeyboardButton("3", callback_data='wrong_890')
+        button_4 = types.InlineKeyboardButton("2", callback_data='correct_890')
+        markup_inline.add(button_2, button_3, button_4)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/xXpy6nbF', reply_markup=markup_inline)
+    elif callback.data == 'wrong_889':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_890':
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("Перейти в начало", callback_data='Math3')
+        markup_inline.add(button_1)
+        client.send_message(callback.message.chat.id,"Молодец!Приступай к последнему уроку!",reply_markup=markup_inline)
+    elif callback.data == 'wrong_890':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+
+
+    elif callback.data == 'Lesson5]':
+        client.send_message(callback.message.chat.id, "Примеры в пазлах:)")
+        markup_inline = types.InlineKeyboardMarkup()
+        button_3 = types.InlineKeyboardButton("1", callback_data='correct_891')
+        button_4 = types.InlineKeyboardButton("2", callback_data='wrong_891')
+        markup_inline.add(button_3, button_4)
+        client.send_photo(callback.message.chat.id,"https://postimg.cc/xJDsPnwV", reply_markup=markup_inline)
+    elif callback.data == 'correct_891':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_3 = types.InlineKeyboardButton("2", callback_data='wrong_892')
+        button_4 = types.InlineKeyboardButton("1", callback_data='correct_892')
+        markup_inline.add(button_3, button_4)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/cgRF9PWg', reply_markup=markup_inline)
+    elif callback.data == 'wrong_891':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_892':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("2", callback_data='wrong_893')
+        button_2 = types.InlineKeyboardButton("1", callback_data='correct_893')
+        markup_inline.add(button_1, button_2)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/303nP9rL', reply_markup=markup_inline)
+    elif callback.data == 'wrong_892':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_893':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_894')
+        button_4 = types.InlineKeyboardButton("2", callback_data='correct_894')
+        markup_inline.add(button_3, button_4)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/HVs6zShn', reply_markup=markup_inline)
+    elif callback.data == 'wrong_893':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_894':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_3 = types.InlineKeyboardButton("2", callback_data='correct_895')
+        button_4 = types.InlineKeyboardButton("1", callback_data='wrong_895')
+        markup_inline.add(button_3, button_4)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/w11081Hd', reply_markup=markup_inline)
+    elif callback.data == 'wrong_894':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_895':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("1", callback_data='correct_896')
+        button_2 = types.InlineKeyboardButton("2", callback_data='wrong_896')
+        markup_inline.add(button_1, button_2)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/RW2GMvVJ', reply_markup=markup_inline)
+    elif callback.data == 'wrong_895':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_896':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_3 = types.InlineKeyboardButton("2", callback_data='wrong_897')
+        button_4 = types.InlineKeyboardButton("1", callback_data='correct_897')
+        markup_inline.add(button_3, button_4)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/xJ2Rzgm0', reply_markup=markup_inline)
+    elif callback.data == 'wrong_896':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_897':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("2", callback_data='wrong_898')
+        button_2 = types.InlineKeyboardButton("1", callback_data='correct_898')
+        markup_inline.add(button_1, button_2)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/PpQMzZb1', reply_markup=markup_inline)
+    elif callback.data == 'wrong_897':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_898':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_3 = types.InlineKeyboardButton("1", callback_data='wrong_899')
+        button_4 = types.InlineKeyboardButton("2", callback_data='correct_899')
+        markup_inline.add(button_3, button_4)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/CnMsv1JX', reply_markup=markup_inline)
+    elif callback.data == 'wrong_898':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_899':
+        client.send_message(callback.message.chat.id, "Правильно! Молодец!")
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("1", callback_data='wrong_900')
+        button_2 = types.InlineKeyboardButton("2", callback_data='correct_900')
+        markup_inline.add(button_1, button_2)
+        client.send_photo(callback.message.chat.id, 'https://postimg.cc/14yBRCPB', reply_markup=markup_inline)
+    elif callback.data == 'wrong_899':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+    elif callback.data == 'correct_900':
+        cursor.execute("UPDATE login_id SET points = points + 5 WHERE id=?", (callback.message.chat.id,))
+        connect.commit()
+        markup_inline = types.InlineKeyboardMarkup()
+        button_1 = types.InlineKeyboardButton("Перейти в начало", callback_data='lala2')
+        markup_inline.add(button_1)
+        client.send_message(callback.message.chat.id,"Переходи и изучай новую тему!",reply_markup=markup_inline)
+    elif callback.data == 'wrong_900':
+        client.send_message(callback.message.chat.id, 'Попробуй ещё раз')
+
     elif callback.data == 'Vnim3':
         markup_inline = types.InlineKeyboardMarkup()
         item_1 = types.InlineKeyboardButton('Урок 1', callback_data='Lesson1}')
